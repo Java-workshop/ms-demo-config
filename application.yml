@@ -1,0 +1,27 @@
+# COMMON APPLICATION PROPERTIES
+
+server.port: 0
+
+management.security.enabled: false
+management.endpoints.web.exposure.include: "*"
+
+spring.cloud.refresh.refreshable: false
+
+
+logging.level.org.springframework: INFO
+
+# Metrics
+management:
+  endpoint:
+    metrics:
+      enabled: true
+    prometheus:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  metrics:
+    export:
+      prometheus:
+        enabled: true
